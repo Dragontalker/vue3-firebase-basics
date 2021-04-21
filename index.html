@@ -15,8 +15,9 @@
       <p>{{ title }} - {{ author }} - {{ age }}</p>
     </div>
 
-    <button>
-      <span @click="toggleShowBooks">Hide Books</span>
+    <button @click="toggleShowBooks">
+      <span v-if="showBooks">Hide Books</span>
+      <span v-if="!showBooks">Show Books</span>
     </button>
   </div>
 
