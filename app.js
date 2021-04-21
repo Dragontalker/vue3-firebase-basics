@@ -9,7 +9,7 @@ const app = Vue.createApp({
 
   methods: {
     changeTitle() {
-      console.log('Your clicked me!')
+      this.title = 'Words of Radiance'
     }
   }
 })
