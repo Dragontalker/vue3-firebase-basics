@@ -15,9 +15,9 @@
       <p>{{ title }} - {{ author }} - {{ age }}</p>
     </div>
 
-    <button @click="age++">Increase Age</button>
-    <button @click="age--">Decrease Age</button>
-    <div @click="changeTitle('Oathbringer')">Change book title</div>
+    <button>
+      <span @click="toggleShowBooks">Hide Books</span>
+    </button>
   </div>
 
   <script src="app.js"></script>
